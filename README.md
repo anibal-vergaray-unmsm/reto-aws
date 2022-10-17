@@ -28,6 +28,6 @@ npm run dev
 # Scripts
 
 - `lint`, Para verificar la sintaxis del codigo
-- `e2e`, Test end-to-end (Configurar la variable URL del script y previamente desplegar el proyecto localmente o en la nube)
+- `e2e`, Test end-to-end (Configurar la variable URL del script y mantener desplegado el proyecto localmente o en la nube)
 - `dev`, Despliegue en servidor local
 - `deploy`, Despliegue en la nube de AWS
