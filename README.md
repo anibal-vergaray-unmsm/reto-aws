@@ -19,8 +19,8 @@ En el archivo config/.env:
 # Instalacion
 
 ```
-git clone https://github.com/anibal-vergaray-unmsm/red-social
-cd red-social
+git clone https://github.com/anibal-vergaray-unmsm/reto-aws
+cd reto-aws
 npm install
 npm run dev
 
