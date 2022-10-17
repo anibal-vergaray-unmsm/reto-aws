@@ -1,0 +1,35 @@
+service: reto-aws
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+
+package:
+  include:
+    - config/.env
+
+functions:
+  create:
+    handler: src/handler.create
+    events:
+      - http:
+          path: tokens
+          method: post
+  findOne:
+    handler: src/handler.findOne
+    events:
+      - http:
+          path: tokens/{token}
+          method: get
+
+custom:
+  esbuild:
+    bundle: true 
+    minify: true
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
